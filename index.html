@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Goodprint printing</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Sarabun', sans-serif;
-      background-color: #f9f9f9;
-    }
-    header {
-      background-color: #ff4c60;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .gallery img {
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease-in-out;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-    footer {
-      background: #222;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .btn-line {
-      background-color: #00b900;
-      color: white;
-    }
-    .btn-fb {
-      background-color: #1877f2;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>ร้านค้าสติกเกอร์</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #ff66cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .buy-btn {
+            background-color: #ff66cc;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-btn:hover {
+            background-color: #ff3399;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>StickerD Studio</h1>
-  <p>รับทำสติ๊กเกอร์ & ฉลากสินค้า เริ่มต้นเพียง 25 บาท!</p>
+    <h1>ร้านค้าสติกเกอร์น่ารัก</h1>
+    <p>เลือกสติกเกอร์ที่คุณชื่นชอบเลย!</p>
 </header>
 
-<div class="container text-center py-4">
-  <h2 class="mb-4">🎨 ตัวอย่างผลงาน</h2>
-  <div class="row gallery">
-    <div class="col-6 col-md-4 mb-3">
-      <img src="https://via.placeholder.com/300x300?text=Sticker+1" class="img-fluid" alt="สินค้า 1">
+<div class="product-container">
+    <div class="product">
+        <img src="https://example.com/sticker1.png" alt="สติกเกอร์ 1">
+        <h3>สติกเกอร์แมวน้อย</h3>
+        <p>ราคา: 35 บาท</p>
+        <button class="buy-btn">สั่งซื้อ</button>
     </div>
-    <div class="col-6 col-md-4 mb-3">
-      <img src="https://via.placeholder.com/300x300?text=Sticker+2" class="img-fluid" alt="สินค้า 2">
+    <div class="product">
+        <img src="https://example.com/sticker2.png" alt="สติกเกอร์ 2">
+        <h3>สติกเกอร์หมีพูห์</h3>
+        <p>ราคา: 40 บาท</p>
+        <button class="buy-btn">สั่งซื้อ</button>
     </div>
-    <div class="col-6 col-md-4 mb-3">
-      <img src="https://via.placeholder.com/300x300?text=Sticker+3" class="img-fluid" alt="สินค้า 3">
-    </div>
-  </div>
-
-  <div class="mt-4">
-    <a class="btn btn-success btn-lg m-2" href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank">📦 สั่งทำสินค้า</a>
-    <a class="btn btn-line btn-lg m-2" href="https://lin.ee/YOUR_LINE_LINK" target="_blank">💬 แชทผ่าน LINE</a>
-    <a class="btn btn-fb btn-lg m-2" href="https://m.me/YOUR_FACEBOOK_PAGE" target="_blank">💬 แชทผ่าน Facebook</a>
-  </div>
+    <!-- เพิ่มสินค้าได้ตามต้องการ -->
 </div>
-
-<footer>
-  <p>© 2025 Goodprint printing | โทร: 053-408-931 | Email: goodprint@gmail.com</p>
-</footer>
 
 </body>
 </html>
